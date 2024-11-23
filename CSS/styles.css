@@ -1,1 +1,222 @@
+:root{
+    --color1: #BCC7BD; /* verde bosque oscuro */
+    --color2: #333; /* gris oscuro*/
+    --color3: #7F9571; /* verde oliva grisáceo */
+    --color4: #fff; /* blanco */
+    --color5: #92B093; /* verde grisáceo claro */
+    --color6: #DCD9BD; /* beige grisáceo */
+    --color7: #ddd; /* gris claro */
+    --color8: #4CAF50; /* verde hierba */
+    
+}
 
+/* Estilos Generales de la pagina */
+
+body {
+    font-family: Arial, sans-serif;   /* Establece la fuente del texto en Arial, con sans-serif como alternativa */
+    line-height: 1.6;  /* Define el espacio entre líneas de texto para mejorar la legibilidad */
+    margin: 0;  /* Elimina los márgenes predeterminados del navegador */
+    padding: 0; /* Elimina el padding (relleno) predeterminado del navegador */
+    background-color: #BCC7BD ;  /* Establece un color de fondo gris verdoso claro */
+    color: #333;  /* Establece el color del texto en un gris oscuro */
+}
+
+/* Estilos del encabezado */ 
+
+header {
+    background: #7F9571 ;  /* Establece un fondo verde oliva grisáceo */
+    color: #fff;   /* El texto dentro del header será blanco */
+    padding: 10px 20px;  /* Añade relleno en la parte superior e inferior (10px) y en los lados (20px) */
+    text-align: center;  /* Centra el texto dentro del encabezado */
+}
+
+/* Menu de navegacion */ 
+
+.menu {
+    background-color: #92B093;   /* Fondo verde suave para el menú */
+    padding: 1px 0;    /* Añade un pequeño relleno en la parte superior e inferior */
+    width: 100%;  /* Establece el ancho del menú al 100% */
+    display: flex;  /* Usa Flexbox para alinear los elementos dentro del contenedor */
+    justify-content: center;  /* Centra los elementos de navegación horizontalmente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);   /* Sombra sutil en el menú para darle profundidad */
+}
+
+.menu ul {
+    list-style: none;  /* Elimina los puntos de lista en los elementos */
+    padding: 0;   /* Elimina el padding interno */
+}
+
+.menu ul li {
+    display: inline;   /* Muestra los elementos de lista de forma horizontal */
+    margin: 0 10px;  /* Añade espacio entre los elementos de lista (10px) */
+}
+
+.menu ul li a {
+    color: #fff;  /* Los enlaces tendrán color blanco */
+    text-decoration: none;  /* Elimina el subrayado de los enlaces */
+    padding: 10px; /* Espaciado alrededor del texto */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Efecto hover sobre los enlaces */
+.menu ul li a:hover {
+    background-color: #4CAF50;  /* Fondo verde más brillante al pasar el mouse */
+    color: #fff;  /* Asegura que el texto permanezca blanco */
+    border-radius: 5px; /* Bordes redondeados para el enlace */
+}
+
+
+/* classe  sobre mi */ 
+
+.sobre-mi{
+  margin: 20px;  /* Añade margen alrededor de la sección */
+  padding: 20px;  /* Añade relleno dentro de la sección */
+  background-color: #DCD9BD; /* Establece un fondo beige grisáceo */
+  border-radius: 8px;  /* Bordes redondeados para una apariencia suave */
+}
+
+
+/* estilo de la imagen de la universidad */ 
+
+.imagen_U{
+    width: 100px; /* Tamaño reducido de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-left: 20px; /* Espacio entre la imagen y el botón */
+}
+
+
+/* estilo de bloque mis experiencias */
+
+.experiencias{
+  margin: 20px;   /* Añade margen alrededor de la sección */
+  padding: 20px;  /* Añade relleno dentro de la sección */
+  background-color: #DCD9BD;  /* Fondo beige grisáceo para la sección */
+  border-radius: 8px;  /* Bordes redondeados */
+}
+
+/* estilo de informacion contacto */
+
+.contacto{
+    margin: 20px;  /* Añade margen alrededor de la sección */
+    padding: 20px;  /* Añade relleno dentro de la sección */
+    background-color: #DCD9BD;  /* Fondo beige grisáceo para la sección */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+
+
+  /* Estilo de tabla */
+
+table {
+    width: 100%;  /* La tabla ocupará el 100% del ancho disponible */
+    border-collapse: collapse;  /* Hace que los bordes de las celdas se fusionen */
+}
+
+table th, table td {
+    border: 1px solid #ddd;  /* Establece un borde sutil y gris claro para las celdas */
+    padding: 10px; /* Añade relleno dentro de las celdas */
+    text-align: left;   /* Alinea el texto a la izquierda dentro de las celdas */
+}
+
+footer {
+    text-align: center;  /* Centra el texto en el pie de página */
+    background: #333;   /* Establece un fondo gris oscuro para el pie de página */
+    color: #fff;  /* El texto del pie de página será blanco */
+    padding: 10px 0;  /* Añade relleno en la parte superior e inferior del pie */
+    margin-top: 20px;  /* Añade margen superior para separar del contenido principal */
+}
+/* Estilo para la imagen de perfil */
+.profile_imagen {
+    width: 150px; /* Tamaño de la imagen */
+    height: 150px; /* Altura igual al ancho para mantener la forma circular */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    border: 3px solid #FFFFFF; /* Agrega un borde con color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para un efecto elegante */
+    object-fit: cover; /* Asegura que la imagen se recorte bien en el círculo */
+    margin: 20px auto; /* Centra la imagen horizontalmente */
+    display: block; /* Asegura que el margen funcione correctamente */
+  }
+  
+
+
+  /* Contenedor principal */
+.experiencias-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+/* Estilo de cada bloque de experiencia */
+.experiencia {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experiencia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen dentro del bloque */
+.experiencia img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Título y descripción */
+.experiencia h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+.experiencia p {
+    margin: 0 10px 15px;
+    color: #666;
+}
+
+
+
+.Descricion-Bloques-Exp {
+        text-align: center; /* Centra el texto horizontalmente */
+        margin: 20px 0; /* Añade márgenes para separar el texto */
+        font-size: 1.2rem; /* Ajusta el tamaño del texto si es necesario */
+        color: #333; /* Cambia el color del texto (opcional) */
+}
+
+
+.bloque-proyectos {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.proyecto {
+    display: block; /* Hace clickeable todo el bloque */
+    padding: 20px;
+    text-align: center; /* Centra el contenido */
+    background-color: #92B093; /* Fondo para distinguir el bloque */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+.proyecto:hover {
+    background-color: #7F9571; /* Cambia el color al pasar el mouse */
+}
