@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>🪨 Piedra 🧻 Papel ✂️ Tijera | ¡Desafía a la PC!</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(to bottom, #f0f8ff, #b2d8e0); /* Fondo degradado */
+                color: #333;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+                margin-top: 20px;
+                color: #444;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            }
+
+            .game-container {
+                margin: 30px auto;
+                padding: 20px;
+                max-width: 600px;
+                background: white;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+                border-radius: 12px;
+            }
+
+            .description {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+                color: #555;
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 15px 25px;
+                font-size: 1rem;
+                margin: 10px;
+                color: white;
+                background-color: #4CAF50;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background 0.3s;
+                text-transform: uppercase;
+            }
+
+            .btn:hover {
+                background-color: #45a049;
+            }
+
+            .emojis {
+                font-size: 4rem;
+                margin: 10px;
+                animation: bounce 1.5s infinite;
+            }
+
+            @keyframes bounce {
+                0%, 100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-10px);
+                }
+            }
+
+            footer {
+                margin-top: 20px;
+                padding: 10px;
+                background: #333;
+                color: white;
+                font-size: 0.9rem;
+            }
+        </style>
+        <script>
+            function startGame() {
+                let jugador = prompt("Elige: 1 para 🪨, 2 para 🧻, 3 para ✂️");
+                let pc = Math.floor(Math.random() * 3) + 1;
+
+                const opciones = { 1: "🪨", 2: "🧻", 3: "✂️" };
+                if (!opciones[jugador]) {
+                    alert("Opción no válida. Elegiste PERDER.");
+                    return;
+                }
+
+                alert(`Elegiste ${opciones[jugador]}`);
+                alert(`La PC eligió ${opciones[pc]}`);
+
+                // Resultados del juego
+                if (pc == jugador) {
+                    alert("¡Es un EMPATE!");
+                } else if (
+                    (jugador == 1 && pc == 3) ||
+                    (jugador == 2 && pc == 1) ||
+                    (jugador == 3 && pc == 2)
+                ) {
+                    alert("¡GANASTE! 🎉");
+                } else {
+                    alert("PERDISTE 😢");
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>🪨 Piedra 🧻 Papel ✂️</h1>
+        <div class="game-container">
+            <p class="description">
+                ¡Bienvenido al clásico juego de Piedra, Papel o Tijera! Haz clic en el botón para jugar y desafiar a la computadora. 
+            </p>
+            <div class="emojis">🪨 🧻 ✂️</div>
+            <button class="btn" onclick="startGame()">¡Jugar ahora!</button>
+        </div>
+
+        <footer>
+            © 2024 Juego Clásico de Piedra, Papel o Tijera. Todos los derechos reservados.
+        </footer>
+    </body>
+</html>
